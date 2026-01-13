@@ -24,26 +24,44 @@
 
 //  First Approach
 
-function uniqueNumbers(arr) {
-  let res = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (!res.includes(arr[i])) {
-      res.push(arr[i]);
-    }
-  }
-  return res;
-}
-function findVowles(text) {
-  let vowels = ["a", "e", "i", "o", "u"];
-  let result = [];
+// function uniqueNumbers(arr) {
+//   let res = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (!res.includes(arr[i])) {
+//       res.push(arr[i]);
+//     }
+//   }
+//   return res;
+// }
+// function findVowles(text) {
+//   let vowels = ["a", "e", "i", "o", "u"];
+//   let result = [];
 
-  for (let i = 0; i < text.length; i++) {
-    if (vowels.includes(text[i])) {
-      result.push(text[i]);
-    }
-  }
-  const finalRes = uniqueNumbers(result);
+//   for (let i = 0; i < text.length; i++) {
+//     if (vowels.includes(text[i])) {
+//       result.push(text[i]);
+//     }
+//   }
+//   const finalRes = uniqueNumbers(result);
 
-  return finalRes;
-}
-console.log(findVowles("aftab ee khan"));
+//   return finalRes;
+// }
+// console.log(findVowles("aftab ee khan"));
+
+// 03) Find Missing Numbers In An Array
+
+// First Approach
+
+// function missingNumbers(arr) {
+//   let res = [];
+//   let sorted = arr.sort((a, b) => a - b);
+
+//   for (let i = sorted[0]; i <= sorted[sorted.length - 1]; i++) {
+//     if (!arr.includes(i)) {
+//       res.push(i);
+//     }
+//   }
+//   return res;
+// }
+
+// console.log(missingNumbers([1, 2, 3, 5, 7, 9]));
