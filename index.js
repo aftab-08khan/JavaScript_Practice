@@ -65,3 +65,33 @@
 // }
 
 // console.log(missingNumbers([1, 2, 3, 5, 7, 9]));
+
+
+
+// 04) Move All Zero At the End
+
+// Frist Approach
+
+
+const arr = [0,-43,34545,4545,6,6,0,244,0,9]
+function moveZeros(numbers){
+   let res = []
+
+
+   for(let i = 0 ; i < numbers.length ; i++){
+    if(numbers[i] === 0){
+        res.push(numbers[i])
+    }else{
+      res.unshift(numbers[i])  
+    }
+   }
+
+   return res
+
+}
+
+
+
+
+console.log(moveZeros(arr));
+
